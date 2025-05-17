@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rainbow Estética Femenina</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #ff5f6d, #ffc371, #7bdff2, #a085ff, #ff5f6d);
+      background-size: 1000% 1000%;
+      animation: rainbowBG 15s ease infinite;
+      min-height: 100vh;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    @keyframes rainbowBG {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      background: linear-gradient(45deg, #FF416C, #FF4B2B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+    header p.slogan {
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: #ff416c;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+    section {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    section h2 {
+      color: #ac1d4d;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ff416c;
+      display: inline-block;
+      padding-bottom: 4px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 1.6rem;
+    }
+    section p {
+      line-height: 1.5;
+      font-weight: 300;
+      font-size: 1rem;
+      color: #444;
+    }
+    ul.services-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 15px;
+    }
+    ul.services-list li {
+      background: #ffe3e8;
+      color: #ac1d4d;
+      margin-bottom: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      box-shadow: 1px 1px 6px rgba(255, 65, 108, 0.4);
+      transition: background-color 0.3s ease;
+    }
+    ul.services-list li:hover {
+      background: #ff416d;
+      color: #fff;
+      cursor: default;
+    }
+    .contact-info {
+      background: #ff416c;
+      color: white;
+      padding: 25px 20px;
+      border-radius: 15px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      box-shadow: 0 6px 15px rgba(255, 65, 108, 0.5);
+    }
+    .contact-info p {
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #999;
+      font-style: italic;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .container {
+        padding: 30px 20px;
+      }
+      section h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Rainbow</h1>
+      <p class="slogan">Belleza que ilumina tu vida</p>
+    </header>
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Sobre Nosotros</h2>
+      <p>
+        En Rainbow, somos una empresa dedicada a realzar la belleza femenina con un toque moderno y profesional.
+        Nuestro compromiso es hacer que cada mujer se sienta única y segura a través de servicios personalizados de estética.
+      </p>
+    </section>
+    <section aria-labelledby="services-title">
+      <h2 id="services-title">Nuestros Servicios</h2>
+      <ul class="services-list">
+        <li>Tratamientos faciales revitalizantes</li>
+        <li>Maquillaje profesional para eventos especiales</li>
+        <li>Manicura y pedicura con diseños únicos</li>
+        <li>Depilación con cera suave y efectiva</li>
+        <li>Asesoría personalizada de cuidado de la piel</li>
+      </ul>
+    </section>
+    <section aria-labelledby="contact-title" class="contact-info">
+      <h2 id="contact-title">Contacto</h2>
+      <p><strong>Cédula Jurídica:</strong> 3101-123456789</p>
+      <p><strong>Correo:</strong> <a href="mailto:contacto@rainbowestetica.com" style="color:#ffe3e8; text-decoration: underline;">contacto@rainbowestetica.com</a></p>
+    </section>
+    <footer>
+      &copy; 2024 Rainbow Estética Femenina - Todos los derechos reservados.
+    </footer>
+  </div>
+</body>
+</html>
+
